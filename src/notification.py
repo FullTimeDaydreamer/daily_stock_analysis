@@ -1556,7 +1556,7 @@ class NotificationService(
                 f"{labels['score_label']} {r.sentiment_score} | {one}"
             )
         lines.append("")
-        lines.append(f"*{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}*")
+        # lines.append(f"*{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}*")
         models = self._collect_models_used(results)
         if models:
             lines.append(f"*{labels['analysis_model_label']}: {', '.join(models)}*")
